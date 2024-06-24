@@ -1,0 +1,275 @@
+/* Background */
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Grid */
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 85vw;
+}
+
+#sidebar {
+    background-color: #0284c7;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    align-items: start;
+    gap: 50px;
+    padding: 30px;
+}
+
+#header {
+    background-color: white;
+    height: 200px;
+}
+
+#main {
+    height: 100vh;
+    box-shadow: 0 2px 5px gray inset;
+    background-color: #e5e7eb;
+    grid-row: 2 / 6;
+}
+
+svg {
+    fill: white;
+}
+
+/* Sidebar */
+
+#logo {
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.icon-name {
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.icon-name:hover {
+    color: yellow;
+
+    svg {
+        fill: yellow;
+    }
+}
+
+.sidebar-item-logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 1px;
+}
+
+
+/* Header */
+
+#header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+#search-icon {
+    fill: black;
+    width: 25px;
+    height: 25px;
+    margin-left: 16px;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+}
+
+#search-bar {
+    width: 600px;
+    height: 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e5e7eb;
+}
+
+#ring {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+#ring-icon {
+    fill: black;
+    width: 25px;
+    height: 25px;
+}
+
+#ring-icon:hover {
+    cursor: pointer;
+}
+
+#account-icon {
+    fill: black;
+    width: 50px;
+    height: 50px;
+}
+
+#account-icon:hover {
+    cursor: pointer;
+}
+
+#ring-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#ring-name:hover {
+    cursor: pointer;
+}
+
+#admin {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#account-photo {
+    justify-self: end;
+    align-self: center;
+    fill: black;
+    width: 80px;
+    height: 80px;
+}
+
+#greet {
+    align-self: last baseline;
+    font-family: sans-serif;
+    padding-left: 12px;
+    font-weight: bolder;
+}
+
+#admin-address {
+    align-self: flex-start;
+    font-family: sans-serif;
+    padding-left: 12px;
+}
+
+#buttons {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 8px;
+}
+
+#buttons > button {
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 32px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Main */
+
+#main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 20px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+#projects-header {
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 400px;
+    height: 240px;
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px lightgray;
+}
+
+#announcements-header {
+    font-family: sans-serif;
+}
+
+#news {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px lightgray;
+    height: 400px;
+}
+
+hr {
+    width: 280px;
+}
+
+.message {
+    font-size: 14px;
+}
+
+#trending-header {
+    font-family: sans-serif;
+}
+
+#trends {
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px lightgray;
+}
